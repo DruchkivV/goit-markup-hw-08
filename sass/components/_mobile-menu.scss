@@ -16,6 +16,11 @@
     }
 }
 
+.mobile-menu-icon:hover .mobile-menu-burger,
+.mobile-menu-icon:focus .mobile-menu-burger {
+    fill: #2196F3;
+}
+
 .mobile-menu-close {
     opacity: 0;
     transition: 500ms;
