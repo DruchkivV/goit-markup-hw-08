@@ -808,7 +808,7 @@ textarea {
 .hero__title {
   font-family: "Roboto";
   font-style: normal;
-  width: 360px;
+  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
