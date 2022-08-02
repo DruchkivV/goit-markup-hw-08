@@ -1,7 +1,6 @@
 .footer {
     background: var(--bg-color-one);
     padding: 60px 0px;
-    width: 480px;
 
     @media screen and (min-width: 768px) {
         width: 768px;
@@ -16,9 +15,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 60px;
 
         @media screen and (min-width: 768px) {
             margin-right: 165px;
+            margin-bottom: 0;
         }
 
         @media screen and (min-width: 1200px) {
@@ -43,17 +44,17 @@
     &__container {
         @extend %container;
 
-        display: flex;
+        display: contents;
         align-items: center;
         justify-content: center;
         flex-direction: column;
 
-        width: 480px;
+        max-width: 480px;
 
         gap: 60px;
 
         @media screen and (min-width: 768px) {
-            width: 768px;
+            max-width: 768px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
@@ -66,7 +67,7 @@
             align-items: baseline;
             flex-direction: row;
 
-            width: 1200px;
+            min-width: 1200px;
 
             gap: 0;
         }
@@ -76,9 +77,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 60px;
 
         @media screen and (min-width: 1200px) {
             margin-right: 93px;
+            margin-bottom: 0;
             align-items: flex-start;
         }
     }
@@ -163,7 +166,7 @@
     }
 
     &__mail {
-        width: 450px;
+        width: 90vw;
         height: 50px;
 
         padding-left: 16px;
@@ -176,10 +179,13 @@
         border-radius: 4px;
 
         @media screen and (min-width: 1200px) {   
-
-        width: 358px;
-
+            max-width: 358px;
         }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            width: 450px;
+        }
+
     }
 
     &__mail::placeholder {

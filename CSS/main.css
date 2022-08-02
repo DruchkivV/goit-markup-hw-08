@@ -1125,7 +1125,6 @@ textarea {
 .footer {
   background: var(--bg-color-one);
   padding: 60px 0px;
-  width: 480px;
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -1148,10 +1147,12 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__bg {
     margin-right: 165px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1174,9 +1175,7 @@ textarea {
   margin-bottom: 20px;
 }
 .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: contents;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1187,12 +1186,12 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 480px;
+  max-width: 480px;
   gap: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
-    width: 768px;
+    max-width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1222,7 +1221,7 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 1200px;
+    min-width: 1200px;
     gap: 0;
   }
 }
@@ -1237,10 +1236,12 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer__social-media {
     margin-right: 93px;
+    margin-bottom: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1337,7 +1338,7 @@ textarea {
   }
 }
 .subscribe__mail {
-  width: 450px;
+  width: 90vw;
   height: 50px;
   padding-left: 16px;
   color: white;
@@ -1349,7 +1350,12 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .subscribe__mail {
-    width: 358px;
+    max-width: 358px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe__mail {
+    width: 450px;
   }
 }
 .subscribe__mail::-webkit-input-placeholder {
