@@ -1,0 +1,9 @@
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
