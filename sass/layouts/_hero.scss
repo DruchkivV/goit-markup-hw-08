@@ -1,5 +1,4 @@
 .hero {
-    background-image: url(../images/page1/body/main/hero/bg-image.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10,6 +9,40 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-image: url(../../images/header/header_S.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        // Для ретіна екранів мобільна версія
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../../images/header/header_S@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../../images/header/header_M.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        // Для ретіна екранів планшетна версія
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../../images/header/header_M@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../../images/header/header_L.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        // Для ретіна екранів десктопна версія
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../../images/header/header_L@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+    }
 
 
     &__title {
@@ -28,7 +61,7 @@
         margin-bottom: 30px;
 
         @media screen and (min-width: 1200px) {
-            width: 696px;
+            max-width: 696px;
             font-size: 44px;
             line-height: 1.36;
         }
