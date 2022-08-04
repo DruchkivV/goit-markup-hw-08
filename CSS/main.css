@@ -884,6 +884,8 @@ textarea {
   }
 }
 .hero__btn {
+  font-family: "Roboto";
+  font-style: normal;
   cursor: pointer;
   background-color: var(--bg-color-second);
   border: transparent;
