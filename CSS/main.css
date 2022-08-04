@@ -1195,11 +1195,18 @@ textarea {
 }
 
 .footer {
+  min-width: 450px;
   background: var(--bg-color-one);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .footer {
     width: 768px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1208,7 +1215,6 @@ textarea {
   }
 }
 .footer__container {
-  padding: 60px 0px;
   display: contents;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1235,9 +1241,9 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1273,7 +1279,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .footer__bg {
-    margin-right: 165px;
+    margin-right: 105px;
     margin-bottom: 0;
   }
 }
@@ -1311,8 +1317,12 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .footer__social-media {
-    margin-right: 93px;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__social-media {
+    margin-right: 93px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;

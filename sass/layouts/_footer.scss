@@ -1,9 +1,17 @@
 .footer {
-    background: var(--bg-color-one);
+    min-width: 450px;
 
+    background: var(--bg-color-one);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     @media screen and (min-width: 768px) {
         width: 768px;
+
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     @media screen and (min-width: 768px) {
@@ -14,7 +22,7 @@
     &__container {
         @extend %container;
 
-        padding: 60px 0px;
+
 
         display: contents;
         align-items: center;
@@ -30,7 +38,7 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
         }
 
@@ -53,7 +61,7 @@
         margin-bottom: 60px;
 
         @media screen and (min-width: 768px) {
-            margin-right: 165px;
+            margin-right: 105px;
             margin-bottom: 0;
         }
 
@@ -84,8 +92,12 @@
         margin-bottom: 60px;
 
         @media screen and (min-width: 1200px) {
-            margin-right: 93px;
             margin-bottom: 0;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+ 
             align-items: flex-start;
         }
     }
